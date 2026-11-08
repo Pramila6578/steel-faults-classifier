@@ -50,7 +50,7 @@ class imbalance impact on accuracy vs MCC. -->
 ## How to Run
 ```
 pip install -r requirements.txt
-python model/train_models.py
+jupyter notebook model/train_models.ipynb   # run all cells to train the models and create test_data.csv
 streamlit run app.py
 ```
 
