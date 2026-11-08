@@ -48,6 +48,6 @@ Features: CSV upload (test data), model selection dropdown, evaluation metrics, 
 ## How to Run
 ```
 pip install -r requirements.txt
-jupyter notebook model/train_models.ipynb   # run all cells: trains the models and creates test_data.csv
+jupyter notebook train_models.ipynb   # run all cells: trains the models and creates test_data.csv
 streamlit run app.py
 ```
