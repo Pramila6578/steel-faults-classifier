@@ -27,7 +27,7 @@ https://github.com/Pramila6578/steel-faults-classifier
 
 Precision, Recall and F1 use weighted averaging and AUC uses one-vs-rest (weighted), since this is a multi-class problem. Weighted recall is mathematically equal to accuracy, so those two columns are identical.
 
-**Tuning experiment:** GridSearchCV (5-fold, scored on weighted F1) was run on kNN (best: k=3, distance weighting), Decision Tree (best: max_depth=8, min_samples_leaf=3) and SVM (best: C=5). Results are in `tuning_comparison.csv`. Gains were small (for example SVM accuracy 0.7506 to 0.7558), which is within noise for a 389-row test set. The table above and the app use the default models.
+**Tuning experiment:** GridSearchCV (5-fold, scored on weighted F1) was run on kNN (best: k=3, distance weighting), Decision Tree (best: max_depth=8, min_samples_leaf=3) and SVM (best: C=5). Results are in `model/tuning_comparison.csv`. Gains were small (for example SVM accuracy 0.7506 to 0.7558), which is within noise for a 389-row test set. The table above and the app use the default models.
 
 ### Observations
 
@@ -48,6 +48,6 @@ Features: CSV upload (test data), model selection dropdown, evaluation metrics, 
 ## How to Run
 ```
 pip install -r requirements.txt
-jupyter notebook train_models.ipynb   # run all cells: trains the models and creates test_data.csv
+jupyter notebook model/train_models.ipynb   # run all cells: trains the models and creates test_data.csv
 streamlit run app.py
 ```
